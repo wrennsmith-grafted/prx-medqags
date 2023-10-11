@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restrict_CPA_enrollment_status</fullName>
+    <active>true</active>
+    <description>If either of the check boxes are selected on the contact drug object, then restrict the CPA Enrollment Status picklist to be only &quot;Not on File&quot;.</description>
+    <errorConditionFormula>AND(
+  NOT(ISPICKVAL(Copay_Enrollment_Status__c, &quot;Not on File&quot;)),
+  OR(Member_Ineligible_for_CPA__c, No_longer_taking_med__c)
+)</errorConditionFormula>
+    <errorMessage>CPA Enrollment Status needs to be &quot;Not on File&quot;</errorMessage>
+</ValidationRule>

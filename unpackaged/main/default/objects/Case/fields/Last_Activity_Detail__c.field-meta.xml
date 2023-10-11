@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Last_Activity_Detail__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Outlines the prior activity as captured by the Service Rep. This will be updated when transferring the Case back to the queue.</inlineHelpText>
+    <label>Last Activity Detail</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Voicemail</fullName>
+                <default>false</default>
+                <label>Voicemail</label>
+            </value>
+            <value>
+                <fullName>Needs Follow-Up</fullName>
+                <default>false</default>
+                <label>Needs Follow-Up</label>
+            </value>
+            <value>
+                <fullName>Left a Message (not with Member)</fullName>
+                <default>false</default>
+                <label>Left a Message (not with Member)</label>
+            </value>
+            <value>
+                <fullName>Invalid Number</fullName>
+                <default>false</default>
+                <label>Invalid Number</label>
+            </value>
+            <value>
+                <fullName>Ring-No Answer</fullName>
+                <default>false</default>
+                <label>Ring-No Answer</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Paid_INFULL_PaidLessThan</fullName>
+    <active>true</active>
+    <description>If the CPA Indicator Field is Paid in Full value the CPA Funds paid should always be less than or equal to the Total Copay</description>
+    <errorConditionFormula>AND(
+$Profile.Name &lt;&gt; &#39;System Administrator Full&#39;,
+ISPICKVAL(CPA_Indicator__c, &quot;Opt-in - Paid in full&quot;),
+CPA_Funds_Paid__c   &gt;  Total_Copay__c)</errorConditionFormula>
+    <errorDisplayField>CPA_Funds_Paid__c</errorDisplayField>
+    <errorMessage>This value cannot exceed the &quot;Total Copay&quot; Amount</errorMessage>
+</ValidationRule>

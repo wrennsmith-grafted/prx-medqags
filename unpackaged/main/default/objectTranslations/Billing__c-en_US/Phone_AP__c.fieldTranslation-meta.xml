@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Accounts Payable Phone --></help>
+        <label><!-- Accounts Payable Phone --></label>
+        <name>Phone_AP__c</name>
+    </CustomFieldTranslation>

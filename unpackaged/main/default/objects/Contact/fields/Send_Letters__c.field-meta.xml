@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Send_Letters__c</fullName>
+    <defaultValue>true</defaultValue>
+    <description>Used to figure out whether or not we want to send the Contact a letter. Normally this is going to be true but allows for certain contacts to be false</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If true, we will send the member a letter at the appropriate time, if false, we will stop any letters from being sent in the future.</inlineHelpText>
+    <label>Send Letters?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

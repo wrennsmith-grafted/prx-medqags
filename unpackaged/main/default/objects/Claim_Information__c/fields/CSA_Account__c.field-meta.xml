@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CSA_Account__c</fullName>
+    <description>A subdivision of suffix.  These subdivisions are designated by the purchaser &amp; Aetna for reporting, administrative, and financial needs (specifically to summarize/combine numbers).  An ACCOUNT will always be associated with at least one INDUSTRY.</description>
+    <externalId>false</externalId>
+    <label>CSA Account</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

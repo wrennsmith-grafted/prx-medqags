@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- 01 and 02 is Out of Network/Not Eligible for PRx and 03 and 04 are In Network/Eligible for PRx. --></help>
+        <label><!-- Coverage Code Indicator --></label>
+        <name>Coverage_Code_Indicator__c</name>
+    </CustomFieldTranslation>

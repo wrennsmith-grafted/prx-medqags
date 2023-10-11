@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enrollment_Case_Close_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Enrollment Case Close Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>UTC MBR and HCP</fullName>
+                <default>false</default>
+                <label>UTC MBR and HCP</label>
+            </value>
+            <value>
+                <fullName>CPA obtained</fullName>
+                <default>false</default>
+                <label>CPA obtained</label>
+            </value>
+            <value>
+                <fullName>CPA Not Available</fullName>
+                <default>false</default>
+                <label>CPA Not Available</label>
+            </value>
+            <value>
+                <fullName>UTC MBR involvement is needed</fullName>
+                <default>false</default>
+                <label>UTC MBR involvement is needed</label>
+            </value>
+            <value>
+                <fullName>MBR deceased</fullName>
+                <default>false</default>
+                <label>MBR deceased</label>
+            </value>
+            <value>
+                <fullName>UTC HCP</fullName>
+                <default>false</default>
+                <label>UTC HCP</label>
+            </value>
+            <value>
+                <fullName>CPA pending - not on file</fullName>
+                <default>false</default>
+                <label>CPA pending - not on file</label>
+            </value>
+            <value>
+                <fullName>MBR Not eligible for CPA</fullName>
+                <default>false</default>
+                <label>MBR Not eligible for CPA</label>
+            </value>
+            <value>
+                <fullName>HCP Not participating</fullName>
+                <default>false</default>
+                <label>HCP Not participating</label>
+            </value>
+            <value>
+                <fullName>HCP states No Copay ($0).</fullName>
+                <default>false</default>
+                <label>HCP states No Copay ($0).</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

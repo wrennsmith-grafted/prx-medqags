@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CPA_Indicator_Required</fullName>
+    <active>true</active>
+    <description>If a Reimbursement case status is set to &#39;Outreach Completed&#39; and the associated Claim Information record has no CPA Indicator, this error message will appear</description>
+    <errorConditionFormula>RecordType.DeveloperName = &#39;Reimbursement&#39; &amp;&amp;  
+ISPICKVAL(Status,&#39;Outreach Completed&#39;) &amp;&amp; 
+TEXT(Claim_Information__r.CPA_Indicator__c) = null</errorConditionFormula>
+    <errorDisplayField>Status</errorDisplayField>
+    <errorMessage>Status can not be set to Outreach Completed if the Claim Information record has no CPA Indicator set.</errorMessage>
+</ValidationRule>

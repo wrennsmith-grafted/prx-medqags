@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApexTestSuite xmlns="http://soap.sforce.com/2006/04/metadata">
+    <testClassName>BadDataTest</testClassName>
+    <testClassName>CaseAgingJobTest</testClassName>
+    <testClassName>CaseRoutingBatchJobTest</testClassName>
+    <testClassName>casesTest</testClassName>
+    <testClassName>CaseWeeklyUTCFileJobTest</testClassName>
+    <testClassName>ChangePasswordControllerTest</testClassName>
+    <testClassName>Claim_InformationsTest</testClassName>
+    <testClassName>commentsActivitiesTest</testClassName>
+    <testClassName>ContactsTest</testClassName>
+    <testClassName>Contact_DrugsTest</testClassName>
+    <testClassName>Daily_ClaimsSelectorTest</testClassName>
+    <testClassName>Daily_ClaimsTest</testClassName>
+    <testClassName>Delete_MedProjectRecordsTest</testClassName>
+    <testClassName>ForgotPasswordControllerTest</testClassName>
+    <testClassName>Historical_ClaimsTest</testClassName>
+    <testClassName>Historical_PriorAuthTest</testClassName>
+    <testClassName>LetterServiceMock</testClassName>
+    <testClassName>Member_DemoTest</testClassName>
+    <testClassName>ModelOfficeTest</testClassName>
+    <testClassName>MyProfilePageControllerTest</testClassName>
+    <testClassName>Prior_AuthTest</testClassName>
+    <testClassName>Provider_DemographicTest</testClassName>
+    <testClassName>PrudentRestAPIResourceTest</testClassName>
+    <testClassName>SendFaxControllerTest</testClassName>
+    <testClassName>SendLetterControllerTest</testClassName>
+    <testClassName>SiteLoginControllerTest</testClassName>
+    <testClassName>SiteRegisterControllerTest</testClassName>
+    <testClassName>StressTest</testClassName>
+    <testClassName>TestCodeCoverage</testClassName>
+    <testClassName>TestDaily_ClaimsSelector</testClassName>
+    <testClassName>TestFormatterUtilSerivce</testClassName>
+    <testClassName>TestHistorical_Prior_Auth</testClassName>
+    <testClassName>TestPrudentRESTAPI_DailyClaim</testClassName>
+</ApexTestSuite>

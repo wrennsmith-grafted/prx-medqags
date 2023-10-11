@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lag_Historical_Claims_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Lag Historical Claims Status</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Not Needed</fullName>
+                <default>false</default>
+                <label>Not Needed</label>
+            </value>
+            <value>
+                <fullName>Overdue</fullName>
+                <default>false</default>
+                <label>Overdue</label>
+            </value>
+            <value>
+                <fullName>Overdue Escalated</fullName>
+                <default>false</default>
+                <label>Overdue Escalated</label>
+            </value>
+            <value>
+                <fullName>Escalation Resolved</fullName>
+                <default>false</default>
+                <label>Escalation Resolved</label>
+            </value>
+            <value>
+                <fullName>Needs Validation</fullName>
+                <default>false</default>
+                <label>Needs Validation</label>
+            </value>
+            <value>
+                <fullName>Validated</fullName>
+                <default>false</default>
+                <label>Validated</label>
+            </value>
+            <value>
+                <fullName>Complete</fullName>
+                <default>false</default>
+                <label>Complete</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

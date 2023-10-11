@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Name_Type_Code__c</fullName>
+    <description>A code which classifies a Provider as an individual or non-individual ( such as facility, or Provider Organization). This is the Name Type associated with the Rendering (Servicing) Provider.
+I = Individual
+N = Non-Individual 
+spaces = undetermined</description>
+    <externalId>false</externalId>
+    <label>Name Type Code</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

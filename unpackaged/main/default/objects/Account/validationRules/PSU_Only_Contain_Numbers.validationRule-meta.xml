@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PSU_Only_Contain_Numbers</fullName>
+    <active>true</active>
+    <description>Do not allow users to input alpha numerics into the PSU Id</description>
+    <errorConditionFormula>AND(NOT(ISBLANK(PSU_ID__c)),
+NOT(ISNUMBER( PSU_ID__c)))</errorConditionFormula>
+    <errorMessage>The PSU ID can only contain numbers.</errorMessage>
+</ValidationRule>

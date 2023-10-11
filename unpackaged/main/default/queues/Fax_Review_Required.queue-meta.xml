@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Fax Review Required</name>
+    <queueMembers>
+        <users>
+            <user>allison.russ@prudentrx.com.mb</user>
+            <user>amber.roach@prudentrx.com.mb</user>
+            <user>amy.shannon@prudentrx.com.mb</user>
+            <user>jessica.stancil@prudentrx.com.mb</user>
+            <user>martha.higgs@prudentrx.com.mb</user>
+            <user>yasmin.creer@prudentrx.com.mb</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>efaxapp__Received_Fax__c</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>efaxapp__Sent_Fax__c</sobjectType>
+    </queueSobject>
+</Queue>

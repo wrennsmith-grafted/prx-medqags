@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CSA_Suffix__c</fullName>
+    <description>This is a subdivision of a control.  These subdivisions are designated  by the purchaser and Aetna for reporting administrative and accounting needs (specifically to summarize/combine accounts).  A SUFFIX will always be associated to one and only one
+CONTROL.  A SUFFIX will always be associated with at least one ACCOUNT.</description>
+    <externalId>false</externalId>
+    <label>CSA Suffix</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

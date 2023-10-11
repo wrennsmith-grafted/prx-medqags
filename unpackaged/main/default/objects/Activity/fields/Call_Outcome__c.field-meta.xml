@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Call_Outcome__c</fullName>
+    <externalId>false</externalId>
+    <label>Call Outcome</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Call_Status__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Voicemail</fullName>
+                <default>false</default>
+                <label>Voicemail</label>
+            </value>
+            <value>
+                <fullName>Returned Call</fullName>
+                <default>false</default>
+                <label>Returned Call</label>
+            </value>
+            <value>
+                <fullName>Left Message with Non-Patient</fullName>
+                <default>false</default>
+                <label>Left Message with Non-Patient</label>
+            </value>
+            <value>
+                <fullName>Invalid Number</fullName>
+                <default>false</default>
+                <label>Invalid Number</label>
+            </value>
+            <value>
+                <fullName>Busy</fullName>
+                <default>false</default>
+                <label>Busy</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Not Reached</controllingFieldValue>
+            <controllingFieldValue>Reached</controllingFieldValue>
+            <valueName>Voicemail</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Not Reached</controllingFieldValue>
+            <controllingFieldValue>Reached</controllingFieldValue>
+            <valueName>Returned Call</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Not Reached</controllingFieldValue>
+            <valueName>Left Message with Non-Patient</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Not Reached</controllingFieldValue>
+            <valueName>Invalid Number</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Not Reached</controllingFieldValue>
+            <controllingFieldValue>Reached</controllingFieldValue>
+            <valueName>Busy</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

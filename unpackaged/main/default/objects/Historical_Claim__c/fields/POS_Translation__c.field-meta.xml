@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>POS_Translation__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE ( Place_of_Service__c,
+&quot;03&quot;, &quot;School&quot;,
+&quot;04&quot;, &quot;Preferred/In-Network&quot;,
+&quot;05&quot;, &quot;Homeless Shelter&quot;,
+&quot;06&quot;, &quot;Indian Health Service Free-standing Facility&quot;,
+&quot;07&quot;, &quot;Tribal 638 Free-Standing Facility&quot;,
+&quot;08&quot;, &quot;Tribal 638 Provider-Based Facility&quot;,
+&quot;11&quot;, &quot;Office&quot;,
+&quot;12&quot;, &quot;Home&quot;,
+&quot;13&quot;, &quot;Assisted Living Facility&quot;,
+&quot;14&quot;, &quot;Group Home&quot;,
+&quot;15&quot;, &quot;Mobile Unit&quot;,
+&quot;20&quot;, &quot;Urgent Care Facility&quot;,
+&quot;21&quot;, &quot;Inpatient Hospital&quot;,
+&quot;22&quot;, &quot;Outpatient Hospital&quot;,
+&quot;23&quot;, &quot;Emergency Room&quot;,
+&quot;24&quot;, &quot;Ambulatory Surgical Center&quot;,
+&quot;25&quot;, &quot;Birthing Center&quot;,
+&quot;26&quot;, &quot;Military Treatment Facility&quot;,
+&quot;31&quot;, &quot;Skilled Nursing Facility&quot;,
+&quot;32&quot;, &quot;Nursing Facility&quot;,
+&quot;33&quot;, &quot;Custodial Care Facility&quot;,
+&quot;34&quot;, &quot;Hospice&quot;,
+&quot;41&quot;, &quot;Ambulance(Land)&quot;,
+&quot;42&quot;, &quot;Ambulance(Water)&quot;,
+&quot;49&quot;, &quot;Independent Clinic&quot;,
+&quot;50&quot;, &quot;Federally Qualified Center&quot;,
+&quot;51&quot;, &quot;Inpatient Psychiatric Facility&quot;,
+&quot;52&quot;, &quot;Psychiatric Facility (Partial Hospitalization)&quot;,
+&quot;53&quot;, &quot;Community Health Center&quot;,
+&quot;54&quot;, &quot;Intermediate Care Facility/Mentally Impaired&quot;,
+&quot;55&quot;, &quot;Residential Substance Abuse Treatment Facility&quot;,
+&quot;56&quot;, &quot;Psychiatric Residential Treatment Facility&quot;,
+&quot;57&quot;, &quot;Non-residential substance Abuse Treatment Facility&quot;,
+&quot;60&quot;, &quot;Mass Immunization Center&quot;,
+&quot;61&quot;, &quot;Comprehensive Inpatient Rehabilitation Facility&quot;,
+&quot;62&quot;, &quot;Comprehensive Outpatient Rehabilitation Facility&quot;,
+&quot;65&quot;, &quot;End Stage Renal Disease Treatment Facility&quot;,
+&quot;71&quot;, &quot;State or Local Health Clinic&quot;,
+&quot;72&quot;, &quot;Rural Health Clinic&quot;,
+&quot;81&quot;, &quot;Independent Laboratory&quot;,
+&quot;99&quot;, &quot;Other Unlisted Facility&quot;,
+&quot;NA&quot;, &quot;Enter on subsequent claim lines with the same provider, dates of service and place of service to have proper copay applied&quot;,
+&quot;&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>POS Translation</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

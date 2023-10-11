@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The flat copay amount for this med charged by the insurance. --></help>
+        <label><!-- Member Copay Amount --></label>
+        <name>Member_Copay_Amount__c</name>
+    </CustomFieldTranslation>

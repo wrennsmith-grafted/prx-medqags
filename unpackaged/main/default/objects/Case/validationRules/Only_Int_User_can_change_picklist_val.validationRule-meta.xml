@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Only_Int_User_can_change_picklist_val</fullName>
+    <active>true</active>
+    <description>For the HCP Outreach Status only Integration user can change the fields status from anything to &#39;Fax Received&#39;</description>
+    <errorConditionFormula>AND(
+     AND($Profile.Name  &lt;&gt; &#39;System Administrator Full&#39;,$Profile.Name  &lt;&gt; &#39;System Administrator&#39;),
+    ISCHANGED(HCP_Enrollment_Outreach__c), 
+    ISPICKVAL(HCP_Enrollment_Outreach__c, &quot;Fax Received&quot;)
+    )</errorConditionFormula>
+    <errorMessage>You do not have access to update the action required to “Fax Received&#39;</errorMessage>
+</ValidationRule>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PartialPay_CopayLess</fullName>
+    <active>true</active>
+    <description>If the CPA Indicator is Opt-In Partial Payment then the Funds paid shouls be less than the Total Copay</description>
+    <errorConditionFormula>AND(
+$Profile.Name &lt;&gt; &#39;System Administrator Full&#39;,
+ISPICKVAL(CPA_Indicator__c, &quot;Opt-in - Partial payment&quot;),
+CPA_Funds_Paid__c   &gt;=   Total_Copay__c)</errorConditionFormula>
+    <errorDisplayField>CPA_Funds_Paid__c</errorDisplayField>
+    <errorMessage>This value should be less than the “Total Copay” value</errorMessage>
+</ValidationRule>

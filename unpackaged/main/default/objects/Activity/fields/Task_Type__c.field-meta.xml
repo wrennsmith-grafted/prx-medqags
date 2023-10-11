@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Task_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Task Type</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Account One-Off Request</fullName>
+                <default>false</default>
+                <label>Account One-Off Request</label>
+            </value>
+            <value>
+                <fullName>Agent Call Review / Agent Coaching</fullName>
+                <default>false</default>
+                <label>Agent Call Review / Agent Coaching</label>
+            </value>
+            <value>
+                <fullName>Call</fullName>
+                <default>false</default>
+                <label>Call</label>
+            </value>
+            <value>
+                <fullName>Call Monitoring</fullName>
+                <default>false</default>
+                <label>Call Monitoring</label>
+            </value>
+            <value>
+                <fullName>Copay Renewals / Reload</fullName>
+                <default>false</default>
+                <label>Copay Renewals / Reload</label>
+            </value>
+            <value>
+                <fullName>Drug Manufacturer</fullName>
+                <default>false</default>
+                <label>Drug Manufacturer</label>
+            </value>
+            <value>
+                <fullName>Schedule Meeting</fullName>
+                <default>false</default>
+                <label>Schedule Meeting</label>
+            </value>
+            <value>
+                <fullName>Send Email</fullName>
+                <default>false</default>
+                <label>Send Email</label>
+            </value>
+            <value>
+                <fullName>Training / Training QA</fullName>
+                <default>false</default>
+                <label>Training / Training QA</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Send_to_ACAS__c</fullName>
+    <description>As a Claims processor, we need the ability to send claims back to Aetna (ACAS) after they have been worked in SF. This will allow ACAS to adjust the claim appropriately.</description>
+    <externalId>false</externalId>
+    <label>Send to ACAS</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Queued</fullName>
+                <default>false</default>
+                <label>Queued</label>
+            </value>
+            <value>
+                <fullName>Sent</fullName>
+                <default>false</default>
+                <label>Sent</label>
+            </value>
+            <value>
+                <fullName>Requeued</fullName>
+                <default>false</default>
+                <label>Requeued</label>
+            </value>
+            <value>
+                <fullName>Re-sent</fullName>
+                <default>false</default>
+                <label>Re-sent</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

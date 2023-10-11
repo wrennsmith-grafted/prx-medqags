@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Plan_Sponsor_Name__c</fullName>
+    <description>&quot;The name of the policy holder
+CMT:  Also known as Customer, Plan Sponsor&quot;</description>
+    <externalId>false</externalId>
+    <label>Plan Sponsor Name</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

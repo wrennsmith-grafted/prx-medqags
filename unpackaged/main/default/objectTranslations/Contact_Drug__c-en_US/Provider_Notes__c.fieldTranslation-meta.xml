@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Helpful notes on the provider&apos;s office to be used by PRx Call Center. Can include details such as the best point of contact at the office, lunch hours, etc. --></help>
+        <label><!-- Provider Notes --></label>
+        <name>Provider_Notes__c</name>
+    </CustomFieldTranslation>

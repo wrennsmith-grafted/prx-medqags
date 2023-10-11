@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Updated nightly by Zitter --></help>
+        <label><!-- Enrollment Req --></label>
+        <name>Enrollment_Req__c</name>
+    </CustomFieldTranslation>

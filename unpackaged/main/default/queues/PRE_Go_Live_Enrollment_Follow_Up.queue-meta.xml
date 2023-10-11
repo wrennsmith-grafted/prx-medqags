@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>PRE-Go-Live  Enrollment Follow-Up</name>
+    <queueMembers>
+        <users>
+            <user>allison.russ@prudentrx.com.mb</user>
+            <user>amber.roach@prudentrx.com.mb</user>
+            <user>amy.shannon@prudentrx.com.mb</user>
+            <user>jessica.stancil@prudentrx.com.mb</user>
+            <user>martha.higgs@prudentrx.com.mb</user>
+            <user>ruchi.amin1@prudentrx.com</user>
+            <user>yasmin.creer@prudentrx.com.mb</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>PRE_Go_Live_Enrollment_Follow_Up</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Contact_Drug__c</sobjectType>
+    </queueSobject>
+</Queue>

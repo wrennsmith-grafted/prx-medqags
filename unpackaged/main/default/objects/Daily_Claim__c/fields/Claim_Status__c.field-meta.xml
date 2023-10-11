@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Claim_Status__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE( Claim_Code__c ,
+&#39;O&#39;, &#39;Original&#39;,
+&#39;A&#39;, &#39;Adjustment&#39;,
+&#39;R&#39;, &#39;Rework&#39;,
+&#39;J&#39;, &#39;Reject&#39;,
+&#39;V&#39;, &#39;Void&#39;,
+&#39;C&#39;, &#39;Closeout&#39;,
+&#39;&#39;
+)</formula>
+    <label>Claim Status</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

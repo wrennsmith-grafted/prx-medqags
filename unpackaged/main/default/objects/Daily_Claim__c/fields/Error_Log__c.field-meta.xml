@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Error_Log__c</fullName>
+    <description>If HCPCS does not exist on Drug object, then don’t process record and set:
+     - Status [NEW FIELD] to “Error”
+     - Error Log [NEW FIELD] to “HCPCS Mismatch.” Dependent and connected to the Status field.</description>
+    <externalId>false</externalId>
+    <label>Error Log</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Status__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>HCPCS Mismatch</fullName>
+                <default>false</default>
+                <label>HCPCS Mismatch</label>
+            </value>
+            <value>
+                <fullName>CSA Mismatch</fullName>
+                <default>false</default>
+                <label>CSA Mismatch</label>
+            </value>
+            <value>
+                <fullName>Previous segment not found</fullName>
+                <default>false</default>
+                <label>Previous segment not found</label>
+            </value>
+            <value>
+                <fullName>Unable to create record due to duplicate.</fullName>
+                <default>false</default>
+                <label>Unable to create record due to duplicate.</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Error</controllingFieldValue>
+            <valueName>HCPCS Mismatch</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Error</controllingFieldValue>
+            <valueName>CSA Mismatch</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Error</controllingFieldValue>
+            <valueName>Previous segment not found</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Error</controllingFieldValue>
+            <valueName>Unable to create record due to duplicate.</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

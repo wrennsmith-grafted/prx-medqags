@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_CPA_Funds_Paid</fullName>
+    <active>true</active>
+    <description>Require CPA Funds Paid when CPA Indicator is filled in</description>
+    <errorConditionFormula>AND(
+ TEXT(CPA_Indicator__c) &lt;&gt; null,
+ TEXT(CPA_Indicator__c) &lt;&gt; &#39;Opt-in - Funds exhausted&#39;,
+ TEXT(CPA_Indicator__c) &lt;&gt; &#39;Opt-out - Refused&#39;,
+ TEXT(CPA_Indicator__c) &lt;&gt; &#39;Opt-out - Member not Enrolled&#39;,
+ TEXT(CPA_Indicator__c) &lt;&gt; &#39;Opt-in - Reimbursement not Confirmed&#39;,
+ ISNULL(CPA_Funds_Paid__c)
+)</errorConditionFormula>
+    <errorDisplayField>CPA_Funds_Paid__c</errorDisplayField>
+    <errorMessage>CPA Funds Paid required when CPA Indicator is filled in</errorMessage>
+</ValidationRule>

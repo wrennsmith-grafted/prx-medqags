@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <environments>Default</environments>
+    <interviewLabel>Claim Object - Flow updates {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Claim Object - Field update workflows</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_CPA_Funds_Paid_0</name>
+        <label>Update CPA Funds Paid</label>
+        <locationX>176</locationX>
+        <locationY>335</locationY>
+        <inputAssignments>
+            <field>CPA_Funds_Paid__c</field>
+            <value>
+                <numberValue>0.0</numberValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_CPA_Funds_Paid_0</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>or</filterLogic>
+        <filters>
+            <field>CPA_Indicator__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Opt-out - Refused</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>CPA_Indicator__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Opt-out - Member not Enrolled</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>CPA_Indicator__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Opt-in - Reimbursement not Confirmed</stringValue>
+            </value>
+        </filters>
+        <object>Claim_Information__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

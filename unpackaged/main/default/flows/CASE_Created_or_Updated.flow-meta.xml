@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>58.0</apiVersion>
+    <assignments>
+        <name>Assign_CASE_Reason_On_File</name>
+        <label>Assign CASE Reason On File</label>
+        <locationX>143</locationX>
+        <locationY>600</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Reason</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>CPA obtained</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Enrollment_Case_Close_Reason__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>CPA obtained</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>UPDATE_Case</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_CASE_Status_and_HCP_Action_Required</name>
+        <label>Assign CASE Status and HCP Action Required</label>
+        <locationX>275</locationX>
+        <locationY>384</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Status</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Outreach Completed</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.HCP_Enrollment_Outreach__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Outreach Complete</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>IF_Contact_Drug_CPA_Enrollment_Status_IS_On_File</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>AssignCASEReasonNotAvailable</name>
+        <label>Assign CASE Reason Not Available</label>
+        <locationX>407</locationX>
+        <locationY>600</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Reason</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>No CPA available</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Enrollment_Case_Close_Reason__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>CPA pending - not on file</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>UPDATE_Case</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>IF_Contact_Drug_CPA_Enrollment_Status_IS_On_File</name>
+        <label>IF Contact Drug CPA Enrollment Status IS On File</label>
+        <locationX>275</locationX>
+        <locationY>492</locationY>
+        <defaultConnector>
+            <targetReference>AssignCASEReasonNotAvailable</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>On_File</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Contact_Drug__r.Copay_Enrollment_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>On File</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_CASE_Reason_On_File</targetReference>
+            </connector>
+            <label>On File</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Just checking</description>
+        <name>IF_ContactDrug_CPA_Enrollment_Status</name>
+        <label>IF ContactDrug CPA Enrollment Status</label>
+        <locationX>473</locationX>
+        <locationY>276</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>On_File_or_Not_Available</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Contact_Drug__r.Copay_Enrollment_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>On File</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Contact_Drug__r.Copay_Enrollment_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Not Available</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_CASE_Status_and_HCP_Action_Required</targetReference>
+            </connector>
+            <label>On File or Not Available</label>
+        </rules>
+    </decisions>
+    <description>Changed to asynchronous</description>
+    <environments>Default</environments>
+    <interviewLabel>CASE - Created or Updated {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>CASE - Created or Updated</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>UPDATE_Case</name>
+        <label>UPDATE Case</label>
+        <locationX>275</locationX>
+        <locationY>792</locationY>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterFormula>AND(
+{!$Record.RecordType.Name} = &#39;Enrollment&#39;,
+NOT({!$Record.IsClosed}),
+NOT(ISNULL({!$Record.Contact.CSA__r.Go_Live_Date__c})),
+{!$Record.Contact.CSA__r.Go_Live_Date__c} &lt;= TODAY(),
+ NOT(ISNULL({!$Record.Contact_Drug__c})),
+OR(ISPICKVAL({!$Record.Contact_Drug__r.Copay_Enrollment_Status__c} , &#39;On File&#39;), ISPICKVAL({!$Record.Contact_Drug__r.Copay_Enrollment_Status__c} , &#39;Not Available&#39;))
+)</filterFormula>
+        <object>Case</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <scheduledPaths>
+            <connector>
+                <targetReference>IF_ContactDrug_CPA_Enrollment_Status</targetReference>
+            </connector>
+            <pathType>AsyncAfterCommit</pathType>
+        </scheduledPaths>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

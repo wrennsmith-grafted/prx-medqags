@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HCP_Action_Required_Outreach_Complete</fullName>
+    <active>true</active>
+    <description>Adding this custom validation rule as part of MBP-922 to require HCP Action Required to be set to &quot;Outreach Complete&quot;.</description>
+    <errorConditionFormula>IF(AND(ISCHANGED(Status),ISPICKVAL(Status,&quot;Outreach Completed&quot;),
+TEXT(HCP_Enrollment_Outreach__c) &lt;&gt; &quot;Outreach Complete&quot;,
+RecordType.Name &lt;&gt; &quot;Introduction&quot;
+),TRUE,FALSE)</errorConditionFormula>
+    <errorMessage>Case Must Have Both Member and HCP Outreach Complete Before Closed.</errorMessage>
+</ValidationRule>

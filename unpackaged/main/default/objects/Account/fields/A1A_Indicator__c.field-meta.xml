@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>A1A_Indicator__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This field will be a Boolean Y/N field .This will show type of client.if the field is Y ,client Type= A1A , for others it will show N .The field will be populated from Prudent Salesforce system, which will come from the Implementation Tracker distributed when implementing a client.</description>
+    <externalId>false</externalId>
+    <label>A1A Indicator</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

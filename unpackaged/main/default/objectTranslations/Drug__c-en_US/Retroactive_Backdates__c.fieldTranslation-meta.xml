@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- A look back period during which members with commercial insurance who have received medication may be eligible for retro copay assistance as determined by the copay assistance program. --></help>
+        <label><!-- Retroactive Backdates --></label>
+        <name>Retroactive_Backdates__c</name>
+    </CustomFieldTranslation>

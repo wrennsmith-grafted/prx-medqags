@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HealthPlanPhone_Should_Be_Phone_Field</fullName>
+    <active>true</active>
+    <description>To ensure the field has numbers and no special characters or letters and the appropriate amount of numbers.</description>
+    <errorConditionFormula>AND(NOT(ISBLANK(Health_Plan_Phone__c)),
+OR(NOT(REGEX(Health_Plan_Phone__c, &quot;\\D*?(\\d\\D*?){10}&quot;)),
+NOT(REGEX( Health_Plan_Phone__c, &quot;[0-9+\\-\\(\\)\\s]*&quot;)))
+)</errorConditionFormula>
+    <errorDisplayField>Health_Plan_Phone__c</errorDisplayField>
+    <errorMessage>You may only enter numbers in this field and please use the appropriate amount of numbers.</errorMessage>
+</ValidationRule>

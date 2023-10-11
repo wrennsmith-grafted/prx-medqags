@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PRE_Go_Live_New_Enrollment_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>PRE-Go-Live New Enrollment</label>
+    <queue>PRE_Go_Live_New_Enrollment</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

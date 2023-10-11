@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Reimbursement Recipient --></label>
+        <name>Reimbursement_Recipient__c</name>
+        <picklistValues>
+            <masterLabel>HCP</masterLabel>
+            <translation><!-- HCP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HCP or MBR</masterLabel>
+            <translation><!-- HCP or MBR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MBR</masterLabel>
+            <translation><!-- MBR --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

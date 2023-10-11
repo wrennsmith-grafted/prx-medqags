@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CallCenter xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <adapterUrl>https://app.contactnow.8x8.com/frontend/standaloneDialer.php</adapterUrl>
+    <customSettings>{&quot;reqSoftphoneHeight&quot;:&quot;600&quot;,&quot;reqUseApi&quot;:&quot;true&quot;,&quot;reqSoftphoneWidth&quot;:&quot;250&quot;,&quot;reqSalesforceCompatibilityMode&quot;:&quot;Classic_and_Lightning&quot;}</customSettings>
+    <displayName>8x8 ContactNow</displayName>
+    <displayNameLabel>Display Name</displayNameLabel>
+    <internalNameLabel>Internal Name</internalNameLabel>
+    <sections>
+        <items>
+            <label>Description</label>
+            <name>reqDescription</name>
+            <value>ContactNow is a cloud-based communication solution from 8x8, that offers all the features and benefits of the most advanced telephony system without the need for a complex installation process or heavy upfront investment.</value>
+        </items>
+        <items>
+            <label>CTI Connector ProgId</label>
+            <name>reqProgId</name>
+            <value>ContactNow</value>
+        </items>
+        <items>
+            <label>Version</label>
+            <name>reqVersion</name>
+            <value>4.0</value>
+        </items>
+        <items>
+            <label>CTI Adapter URL</label>
+            <name>reqAdapterUrl</name>
+            <value>https://app.contactnow.8x8.com/frontend/standaloneDialer.php</value>
+        </items>
+        <items>
+            <label>Use OpenCTI</label>
+            <name>reqUseApi</name>
+            <value>true</value>
+        </items>
+        <items>
+            <label>Height</label>
+            <name>reqSoftphoneHeight</name>
+            <value>600</value>
+        </items>
+        <items>
+            <label>Width</label>
+            <name>reqSoftphoneWidth</name>
+            <value>250</value>
+        </items>
+        <items>
+            <label>Compatibility mode with Classic</label>
+            <name>reqSalesforceCompatibilityMode</name>
+            <value>Classic_and_Lightning</value>
+        </items>
+        <label>General Info</label>
+        <name>reqGeneralInfo</name>
+    </sections>
+    <sections>
+        <items>
+            <label>enable ClickToDial</label>
+            <name>enableClickToDial</name>
+            <value>true</value>
+        </items>
+        <items>
+            <label>Visual Force Page name for displaying on calls (Empty for disabling)</label>
+            <name>VFCallPage</name>
+            <value xsi:nil="true" />
+        </items>
+        <items>
+            <label>Search field for records</label>
+            <name>searchField</name>
+            <value xsi:nil="true" />
+        </items>
+        <label>ContactNow settings</label>
+        <name>SFSettings</name>
+    </sections>
+    <version>4</version>
+</CallCenter>

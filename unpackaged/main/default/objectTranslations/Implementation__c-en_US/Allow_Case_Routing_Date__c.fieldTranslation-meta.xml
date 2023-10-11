@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Allow Case Routing Date --></label>
+        <name>Allow_Case_Routing_Date__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reimbursement</fullName>
+    <isActive>true</isActive>
+    <values>
+        <fullName>1st Attempt Needed</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>2nd Attempt Needed</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>3rd Attempt Needed</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>4th Attempt Needed</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>5th Attempt Needed</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Outreach Completed</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Response Received</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Transfer to Health Plan</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Verify Fax Number</fullName>
+        <default>true</default>
+    </values>
+</BusinessProcess>

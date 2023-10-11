@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ControlNumber_Only_Contain_Numbers</fullName>
+    <active>true</active>
+    <description>The Control Number field can only contain numbers</description>
+    <errorConditionFormula>AND(NOT(ISBLANK(Control_Number__c)),
+NOT(ISNUMBER( Control_Number__c )))</errorConditionFormula>
+    <errorMessage>The Control Number can only contain numbers</errorMessage>
+</ValidationRule>

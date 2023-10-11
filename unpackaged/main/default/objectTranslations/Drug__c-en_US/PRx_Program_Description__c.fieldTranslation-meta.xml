@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- PRx Program Description --></label>
+        <name>PRx_Program_Description__c</name>
+        <picklistValues>
+            <masterLabel>Essential</masterLabel>
+            <translation><!-- Essential --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Essential</masterLabel>
+            <translation><!-- Non-Essential --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

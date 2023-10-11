@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CPA_Funds_never_greater_than_Total_Copay</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+$Profile.Name &lt;&gt; &#39;System Administrator Full&#39;,
+CPA_Funds_Paid__c &gt; Total_Copay__c,
+AND(
+NOT(ISPICKVAL(CPA_Indicator__c,&#39;Opt-in - Partial payment&#39;)),
+NOT(ISPICKVAL(CPA_Indicator__c, &#39;Opt-in - Paid in full&#39;))
+)
+)</errorConditionFormula>
+    <errorDisplayField>CPA_Funds_Paid__c</errorDisplayField>
+    <errorMessage>This value cannot exceed the “Total Copay” value.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Post-Go-Live New Reimbursement</name>
+    <queueMembers>
+        <users>
+            <user>martha.higgs@prudentrx.com.mb</user>
+            <user>tina.patel1@prudentrx.com</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>Post_Go_Live_New_Reimbursement</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Contact_Drug__c</sobjectType>
+    </queueSobject>
+</Queue>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Outreach_Must_Be_Populated</fullName>
+    <active>true</active>
+    <description>If the Status is &#39;Transfer to Health Plan&#39;, Outreach Type and Outreach Comments must be filled out.</description>
+    <errorConditionFormula>ISPICKVAL(Status,&#39;Transfer to Health Plan&#39;)
+&amp;&amp;
+( TEXT(Outreach_Type__c) = null
+||
+ Outreach_Comments__c = null)</errorConditionFormula>
+    <errorDisplayField>Outreach_Type__c</errorDisplayField>
+    <errorMessage>If the Status is &#39;Transfer to Health Plan&#39;, Outreach Type and Outreach Comments must be filled out.</errorMessage>
+</ValidationRule>

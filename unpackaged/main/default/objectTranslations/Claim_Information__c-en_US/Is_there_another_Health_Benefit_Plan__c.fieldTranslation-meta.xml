@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Does the patient have medical benefits and/or pharmacy benefits through any private or government health insurer/payer/program? Y/N --></help>
+        <label><!-- Is there a Secondary Insurance Plan? --></label>
+        <name>Is_there_another_Health_Benefit_Plan__c</name>
+    </CustomFieldTranslation>

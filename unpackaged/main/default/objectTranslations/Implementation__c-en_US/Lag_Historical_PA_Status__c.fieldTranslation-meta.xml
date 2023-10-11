@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Lag Historical PA Status --></label>
+        <name>Lag_Historical_PA_Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation><!-- Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Escalation Resolved</masterLabel>
+            <translation><!-- Escalation Resolved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Needs Validation</masterLabel>
+            <translation><!-- Needs Validation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Needed</masterLabel>
+            <translation><!-- Not Needed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Overdue</masterLabel>
+            <translation><!-- Overdue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Overdue Escalated</masterLabel>
+            <translation><!-- Overdue Escalated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Validated</masterLabel>
+            <translation><!-- Validated --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

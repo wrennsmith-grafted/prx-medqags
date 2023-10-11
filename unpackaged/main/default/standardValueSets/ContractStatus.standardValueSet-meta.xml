@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <groupingStringEnum>ContractStatusCode</groupingStringEnum>
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Client Actively Interested</fullName>
+        <default>false</default>
+        <label>Client Actively Interested</label>
+        <groupingString>Draft</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>Contract Requested</fullName>
+        <default>false</default>
+        <label>Contract Requested</label>
+        <groupingString>InApproval</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>Contract Sent</fullName>
+        <default>false</default>
+        <label>Contract Sent</label>
+        <groupingString>Activated</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>Redlines</fullName>
+        <default>false</default>
+        <label>Redlines</label>
+        <groupingString>Activated</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+        <groupingString>Activated</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>Client Signed</fullName>
+        <default>false</default>
+        <label>Client Signed</label>
+        <groupingString>Activated</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>CVS Doing Comparison</fullName>
+        <default>false</default>
+        <label>CVS Doing Comparison</label>
+        <groupingString>Activated</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>CVS Approved to Sign</fullName>
+        <default>false</default>
+        <label>CVS Approved to Sign</label>
+        <groupingString>Activated</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>Waiting on Signature</fullName>
+        <default>false</default>
+        <label>Waiting on Signature</label>
+        <groupingString>Activated</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>Client No Longer Interested</fullName>
+        <default>false</default>
+        <label>Client No Longer Interested</label>
+        <groupingString>Activated</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>Signed and Fully Executed</fullName>
+        <default>false</default>
+        <label>Signed and Fully Executed</label>
+        <groupingString>Activated</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>Client Terminated</fullName>
+        <default>false</default>
+        <label>Client Terminated</label>
+        <groupingString>Activated</groupingString>
+    </standardValue>
+</StandardValueSet>

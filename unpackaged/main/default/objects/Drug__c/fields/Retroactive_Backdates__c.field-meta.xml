@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Retroactive_Backdates__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>A look back period during which members with commercial insurance who have received medication may be eligible for retro copay assistance as determined by the copay assistance program.</inlineHelpText>
+    <label>Retroactive Backdates</label>
+    <length>32768</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

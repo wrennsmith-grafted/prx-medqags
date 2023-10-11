@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contract_Termination_Notice__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>If &#39;Term for Convenience&#39; is selected please ensure you fill out the &#39;Termination Term&#39; field below.</inlineHelpText>
+    <label>Contract Termination Notice</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>30</fullName>
+                <default>false</default>
+                <label>30</label>
+            </value>
+            <value>
+                <fullName>60</fullName>
+                <default>false</default>
+                <label>60</label>
+            </value>
+            <value>
+                <fullName>Term for Convience</fullName>
+                <default>false</default>
+                <label>Term for Convience</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

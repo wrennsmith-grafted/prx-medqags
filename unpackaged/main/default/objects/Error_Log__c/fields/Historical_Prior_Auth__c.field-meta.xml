@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Historical_Prior_Auth__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Lookup to related Historical Prior Auth record.</description>
+    <externalId>false</externalId>
+    <label>Historical Prior Auth</label>
+    <referenceTo>Historical_Prior_Auth__c</referenceTo>
+    <relationshipLabel>Error Log</relationshipLabel>
+    <relationshipName>Error_Log</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

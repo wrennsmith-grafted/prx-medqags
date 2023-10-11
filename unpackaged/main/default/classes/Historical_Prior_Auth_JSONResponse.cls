@@ -1,0 +1,17 @@
+/**
+ * @description       : Prior_Auth_JSONResponse class.
+ * @author            : jyothi.gandhamaneni@PrudentRx.com
+ * @group             :
+ * @last modified on  : 08-19-2021
+ * @last modified by  : Jyothi Gandhamaneni
+ * Modifications Log
+ * Ver   Date         Author                           Modification
+ * 1.0   08-18-2021   Jyothi Gandhamaneni			   Initial Version
+ *
+ **/
+
+public class Historical_Prior_Auth_JSONResponse {
+    public String status;
+    public String errorMessage;
+    public String prudentInDataStagingId;
+}

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Introduction</fullName>
+    <active>true</active>
+    <businessProcess>Introduction</businessProcess>
+    <compactLayoutAssignment>Introduction_Case_Compact_Layout</compactLayoutAssignment>
+    <label>Introduction</label>
+    <picklistValues>
+        <picklist>Daily_Claim_Status__c</picklist>
+        <values>
+            <fullName>Go-live Date Null</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Enrollment_Case_Close_Reason__c</picklist>
+        <values>
+            <fullName>CPA obtained</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CPA pending - not on file</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HCP Not participating</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HCP states No Copay %28%240%29%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MBR Not eligible for CPA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MBR deceased</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC HCP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC MBR and HCP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC MBR involvement is needed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>HCP_Enrollment_Outreach__c</picklist>
+        <values>
+            <fullName>Fax Received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outreach Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outreach Needed</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Last_Activity_Detail__c</picklist>
+        <values>
+            <fullName>Invalid Number</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Left a Message %28not with Member%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Needs Follow-Up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ring-No Answer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Voicemail</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Origin</picklist>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Twitter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Outreach_Type__c</picklist>
+        <values>
+            <fullName>Both</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HCP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MBR</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>Critical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason</picklist>
+        <values>
+            <fullName>Complex functionality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Existing problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Instructions not clear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>User didn%27t attend training</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reimbursement_Case_Close_Reason__c</picklist>
+        <values>
+            <fullName>HCP Not participating</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HCP states No Copay %28%240%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MBR Not eligible for CPA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MBR not enrolled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No CPA available</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No copay on claim %28%240%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reimbursement confirmed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC HCP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC MBR %26 HCP unable to confirm reimbursement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC MBR involved in reimbursement process</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Send_to_Aetna__c</picklist>
+        <values>
+            <fullName>Queued</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sent</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Enrollment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reimbursement</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

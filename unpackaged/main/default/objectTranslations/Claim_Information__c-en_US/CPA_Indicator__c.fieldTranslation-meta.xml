@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- CPA Indicator --></label>
+        <name>CPA_Indicator__c</name>
+        <picklistValues>
+            <masterLabel>Opt-in - CPA not available</masterLabel>
+            <translation><!-- Opt-in - CPA not available --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opt-in - Funds exhausted</masterLabel>
+            <translation><!-- Opt-in - Funds exhausted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opt-in - Paid in full</masterLabel>
+            <translation><!-- Opt-in - Paid in full --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opt-in - Partial payment</masterLabel>
+            <translation><!-- Opt-in - Partial payment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opt-in - Reimbursement not Confirmed</masterLabel>
+            <translation><!-- Opt-in - Reimbursement not Confirmed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opt-out - Member not Enrolled</masterLabel>
+            <translation><!-- Opt-out - Member not Enrolled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opt-out - Refused</masterLabel>
+            <translation><!-- Opt-out - Refused --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

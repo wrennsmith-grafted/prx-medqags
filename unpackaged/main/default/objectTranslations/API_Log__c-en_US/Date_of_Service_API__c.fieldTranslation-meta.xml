@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Claim Fill Date --></help>
+        <label><!-- Date of Service --></label>
+        <name>Date_of_Service_API__c</name>
+    </CustomFieldTranslation>

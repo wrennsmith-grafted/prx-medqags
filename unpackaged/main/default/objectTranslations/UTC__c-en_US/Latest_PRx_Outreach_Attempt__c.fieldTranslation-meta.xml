@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Select the date of the latest telephonic outreach PRx made to either the MBR or HCP. --></help>
+        <label><!-- Latest PRx Outreach Attempt --></label>
+        <name>Latest_PRx_Outreach_Attempt__c</name>
+    </CustomFieldTranslation>

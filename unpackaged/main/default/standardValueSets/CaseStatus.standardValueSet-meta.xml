@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Verify Fax Number</fullName>
+        <default>true</default>
+        <label>Verify Fax Number</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>1st Attempt Needed</fullName>
+        <default>false</default>
+        <label>1st Attempt Needed</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>2nd Attempt Needed</fullName>
+        <default>false</default>
+        <label>2nd Attempt Needed</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>3rd Attempt Needed</fullName>
+        <default>false</default>
+        <label>3rd Attempt Needed</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Transfer to Health Plan</fullName>
+        <default>false</default>
+        <label>Transfer to Health Plan</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Response Received</fullName>
+        <default>false</default>
+        <label>Response Received</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>4th Attempt Needed</fullName>
+        <default>false</default>
+        <label>4th Attempt Needed</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>5th Attempt Needed</fullName>
+        <default>false</default>
+        <label>5th Attempt Needed</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Outreach Completed</fullName>
+        <default>false</default>
+        <label>Outreach Completed</label>
+        <closed>true</closed>
+    </standardValue>
+</StandardValueSet>

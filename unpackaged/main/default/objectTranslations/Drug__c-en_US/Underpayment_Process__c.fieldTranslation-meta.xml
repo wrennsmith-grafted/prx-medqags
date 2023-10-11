@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Underpayment Process --></label>
+        <name>Underpayment_Process__c</name>
+        <picklistValues>
+            <masterLabel>Each Fill</masterLabel>
+            <translation><!-- Each Fill --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partial &amp; Exhausted</masterLabel>
+            <translation><!-- Partial &amp; Exhausted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Second Fill</masterLabel>
+            <translation><!-- Second Fill --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

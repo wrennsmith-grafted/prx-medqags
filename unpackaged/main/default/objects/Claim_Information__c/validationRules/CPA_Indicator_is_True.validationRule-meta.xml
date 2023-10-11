@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CPA_Indicator_is_True</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND(
+$Profile.Name &lt;&gt; &#39;System Administrator Full&#39;,
+CPA_Indicator_Is_Opt_Out_Status__c  = TRUE)</errorConditionFormula>
+    <errorDisplayField>CPA_Funds_Paid__c</errorDisplayField>
+    <errorMessage>CPA Indicator for this member is in an Opt-out status. So you cannot enter a                   CPA Funds Paid amount</errorMessage>
+</ValidationRule>

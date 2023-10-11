@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HCP_Enrollment_Outreach__c</fullName>
+    <description>Health Care Provider Outreach Status for Enrollment Cases.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Health Care Provider Outreach Status for Enrollment Cases.</inlineHelpText>
+    <label>HCP Action Required</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Outreach Needed</fullName>
+                <default>true</default>
+                <label>Outreach Needed</label>
+            </value>
+            <value>
+                <fullName>Fax Received</fullName>
+                <default>false</default>
+                <label>Fax Received</label>
+            </value>
+            <value>
+                <fullName>Outreach Complete</fullName>
+                <default>false</default>
+                <label>Outreach Complete</label>
+            </value>
+            <value>
+                <fullName>1st Attempt</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1st Attempt</label>
+            </value>
+            <value>
+                <fullName>2nd Attempt</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>2nd Attempt</label>
+            </value>
+            <value>
+                <fullName>3rd Attempt</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>3rd Attempt</label>
+            </value>
+            <value>
+                <fullName>CPA Confirmed</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CPA Confirmed</label>
+            </value>
+            <value>
+                <fullName>CPA Pending</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CPA Pending</label>
+            </value>
+            <value>
+                <fullName>No CPA Available</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>No CPA Available</label>
+            </value>
+            <value>
+                <fullName>Not Reached</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Not Reached</label>
+            </value>
+            <value>
+                <fullName>Outreach Needed*</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Outreach Needed*</label>
+            </value>
+            <value>
+                <fullName>Reimbursement Confirmed</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Reimbursement Confirmed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

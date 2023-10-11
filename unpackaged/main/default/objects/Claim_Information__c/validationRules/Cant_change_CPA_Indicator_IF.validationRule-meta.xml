@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cant_change_CPA_Indicator_IF</fullName>
+    <active>true</active>
+    <description>An agent shouldn&#39;t change the CPA Indicator value if the prior value was one of the following:
+Opt-out - Refused
+Opt-out - Member not Enrolled
+Opt-in - Reimbursement not Confirmed</description>
+    <errorConditionFormula>AND(
+  $Profile.Name &lt;&gt; &#39;System Administrator Full&#39;,
+  ISCHANGED(CPA_Funds_Paid__c),
+  CPA_Funds_Paid__c  &gt; 0,
+ OR(
+     ISPICKVAL(CPA_Indicator__c , &quot;Opt-out - Refused&quot;),
+     ISPICKVAL(CPA_Indicator__c, &quot;Opt-out - Member not Enrolled&quot;),
+     ISPICKVAL(CPA_Indicator__c, &quot;Opt-in - Reimbursement not Confirmed&quot;),
+     ISPICKVAL(CPA_Indicator__c, &quot;Opt-in - Funds exhausted&quot;)
+))</errorConditionFormula>
+    <errorDisplayField>CPA_Indicator__c</errorDisplayField>
+    <errorMessage>CPA Indicator for this member is in an Opt-out status. So you cannot enter a                   CPA Funds Paid amount</errorMessage>
+</ValidationRule>

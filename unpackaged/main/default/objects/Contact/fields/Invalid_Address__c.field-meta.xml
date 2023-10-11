@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Invalid_Address__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Used to denote when the LOB(Vendor) system returns a bad or invalid US address.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Used to denote when the LOB(Vendor) system returns a bad or invalid US address.</inlineHelpText>
+    <label>Invalid Address</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

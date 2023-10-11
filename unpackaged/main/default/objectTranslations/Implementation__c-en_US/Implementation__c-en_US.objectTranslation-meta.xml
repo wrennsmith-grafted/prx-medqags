@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Implementation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Implementations</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Implementation Layout</layout>
+        <sections>
+            <label><!-- ACCOUNT AND CONTRACT INFORMATION --></label>
+            <section>ACCOUNT AND CONTRACT INFORMATION</section>
+        </sections>
+        <sections>
+            <label><!-- CSSM IMPLEMENTATION MILESTONES --></label>
+            <section>CSSM IMPLEMENTATION MILESTONES</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Implementation --></label>
+            <section>Implementation</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

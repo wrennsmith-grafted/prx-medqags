@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Introduction</fullName>
+    <description>Introduction Support Process</description>
+    <isActive>true</isActive>
+    <values>
+        <fullName>1st Attempt Needed</fullName>
+        <default>true</default>
+    </values>
+    <values>
+        <fullName>2nd Attempt Needed</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>3rd Attempt Needed</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Outreach Completed</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

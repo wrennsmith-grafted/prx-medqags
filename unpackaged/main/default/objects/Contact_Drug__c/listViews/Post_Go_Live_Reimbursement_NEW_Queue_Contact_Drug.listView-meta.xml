@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Post_Go_Live_Reimbursement_NEW_Queue_Contact_Drug</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Post-Go-Live New Reimbursement</label>
+    <queue>Post_Go_Live_New_Reimbursement</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

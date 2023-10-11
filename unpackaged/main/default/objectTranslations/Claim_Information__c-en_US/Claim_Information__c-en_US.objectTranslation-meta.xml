@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Claim Information</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Claims Information</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Claim Information Layout</layout>
+        <sections>
+            <label><!-- Claim Information --></label>
+            <section>Claim Information</section>
+        </sections>
+        <sections>
+            <label><!-- Client Information --></label>
+            <section>Client Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Member Information --></label>
+            <section>Member Information</section>
+        </sections>
+        <sections>
+            <label><!-- Provider Information --></label>
+            <section>Provider Information</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Update Claim --></label>
+        <name>Update_Claim</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- This value cannot exceed the “Total Copay” value. --></errorMessage>
+        <name>CPA_Funds_never_greater_than_Total_Copay</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- CPA Indicator for this member is in an Opt-out status. So you cannot enter a                   CPA Funds Paid amount --></errorMessage>
+        <name>CPA_Indicator_is_True</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- CPA Indicator for this member is in an Opt-out status. So you cannot enter a                   CPA Funds Paid amount --></errorMessage>
+        <name>Cant_change_CPA_Indicator_IF</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This value cannot exceed the &quot;Total Copay&quot; Amount --></errorMessage>
+        <name>Paid_INFULL_PaidLessThan</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This value should be less than the “Total Copay” value --></errorMessage>
+        <name>PartialPay_CopayLess</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- CPA Funds Paid required when CPA Indicator is filled in --></errorMessage>
+        <name>Require_CPA_Funds_Paid</name>
+    </validationRules>
+</CustomObjectTranslation>
